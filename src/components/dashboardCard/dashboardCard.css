@@ -44,7 +44,7 @@
 }
 
 .dashboard__card__front__content h3 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     color: white;
     font-weight: 300;
     margin-bottom: 0.3rem;
@@ -52,7 +52,7 @@
 
 .dashboard__card__front__content p {
     color: var(--blue200);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 

@@ -15,7 +15,7 @@
 }
 
 .profile__card__main img {
-    width: 5rem;
+    width: 4rem;
     border: 3px solid var(--blue200);
     border-radius: 50%;
     margin-bottom: 2rem;
@@ -42,7 +42,7 @@
 
 .filter {
     color: var(--blue300);
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
     text-transform: capitalize;
 }
