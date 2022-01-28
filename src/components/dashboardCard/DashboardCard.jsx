@@ -11,7 +11,7 @@ const DashboardCard = ({ data }) => {
             <div className="dashboard__card__front">
                 <header className="dashboard__card__front__header">
                     <h2>{data.title}</h2>
-                    <button>
+                    <button aria-label="options">
                         <Ellipsis />
                     </button>
                 </header>
