@@ -1,6 +1,7 @@
 .dashboard__card {
     position: relative;
-    width: 14rem;
+    padding-top: 2.5rem;
+    cursor: pointer;
 }
 
 .dashboard__card__back,
@@ -11,21 +12,21 @@
 
 .dashboard__card__back {
     position: absolute;
-    inset: 0;
+    inset: 0 0 10px 0;
     background-color: var(--back-bg);
     z-index: -1;
-    transform: translateY(-2rem);
+    overflow: hidden;
 }
 .dashboard__card__back img {
     display: block;
     margin-left: auto;
     position: relative;
     width: 3.5rem;
-    top: -2.25rem;
+    top: -2rem;
 }
 .dashboard__card__front {
     background-color: var(--blue600);
-    margin-top: 2rem;
+    transition: background-color 0.2s linear;
 }
 
 .dashboard__card__front__header {
@@ -37,19 +38,35 @@
 }
 
 .dashboard__card__front__header h2 {
-    font-size: 1.15rem;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 .dashboard__card__front__content h3 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     color: white;
     font-weight: 300;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.3rem;
 }
 
 .dashboard__card__front__content p {
     color: var(--blue200);
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.dashboard__card__front:hover {
+    background-color: hsl(235, 40%, 30%);
+}
+
+@media (max-width: 545px) {
+    .dashboard__card__front__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .dashboard__card__front__content h3 {
+        font-size: 2.5rem;
+    }
 }

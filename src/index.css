@@ -20,9 +20,33 @@ body {
     font-family: "Rubik", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--blue800);
+}
+
+#root {
+    width: 100%;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    max-width: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 2rem;
 }
 
 button {
     background: none;
     border: none;
+}
+
+@media (max-width: 500px) {
+    #root {
+        padding: 1.5rem;
+    }
 }
