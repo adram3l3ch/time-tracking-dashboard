@@ -44,6 +44,7 @@
     color: var(--blue300);
     font-size: 1.1rem;
     cursor: pointer;
+    text-transform: capitalize;
 }
 
 .filter.active,

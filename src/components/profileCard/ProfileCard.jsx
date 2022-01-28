@@ -1,8 +1,9 @@
 import React from "react";
 import avatar from "../../images/image-jeremy.png";
+import FilterButton from "../filterButtn/FilterButton";
 import "./profileCard.css";
 
-const ProfileCard = ({ name }) => {
+const ProfileCard = ({ name, handler, activeTab }) => {
     return (
         <div className="profile__card">
             <div className="profile__card__main">
@@ -13,9 +14,9 @@ const ProfileCard = ({ name }) => {
                 </div>
             </div>
             <div className="profile__card__footer">
-                <p className="filter">Daily</p>
-                <p className="filter active">Weekly</p>
-                <p className="filter">Monthly</p>
+                <FilterButton name="daily" handler={handler} activeTab={activeTab} />
+                <FilterButton name="weekly" handler={handler} activeTab={activeTab} />
+                <FilterButton name="monthly" handler={handler} activeTab={activeTab} />
             </div>
         </div>
     );
