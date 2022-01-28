@@ -6,8 +6,8 @@ function App() {
     return (
         <main className="app">
             <ProfileCard name={data.user.username} />
-            {data.dashboard.map(item => (
-                <DashboardCard data={item} />
+            {data.dashboard.map((item, index) => (
+                <DashboardCard data={item} key={index} />
             ))}
         </main>
     );
